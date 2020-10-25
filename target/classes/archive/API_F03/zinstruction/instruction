@@ -1,0 +1,13 @@
+1、base:測試基類
+2、config：配置文件
+3、data：測試數據
+4、report：測試報告樣式
+5、restclient：接口方法
+6、test：測試用例
+7、util：工具類
+8、zinstruction:框架簡介
+
+PS：
+練習地址：https://reqres.in/
+
+僅供參考

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="test" verbose="1" preserve-order="true" parallel="false">
+    <test name="testCase1">
+        <classes>
+            <class name="com.qa.API_F02.tests.TestCase_002_WithToken">
+                <methods>
+                    <include name="login"></include>
+                    <include name="getApi"></include>
+                    <include name="deleteApi"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="testCase2">
+        <classes>
+            <class name="com.qa.API_F02.tests.TestCase_002_WithToken">
+                <methods>
+                    <include name="login"></include>
+                    <include name="getApi"></include>
+                    <include name="deleteApi"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <listeners>
+        <listener class-name="com.qa.API_F02.report.ExtentTestNGReporterListener"></listener>
+    </listeners>
+</suite>
+
+        <!--<?xml version="1.0" encoding="UTF-8"?>-->
+        <!--&lt;!&ndash;<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">&ndash;&gt;-->
+        <!--<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">-->
+        <!--<suite name="All Test Suite">-->
+        <!--    <test verbose="2" preserve-order="true" name="API_F02">-->
+        <!--        <classes>-->
+        <!--&lt;!&ndash;            <class name="com.qa.API_F02.tests.GetAPITest_01">&ndash;&gt;-->
+
+        <!--&lt;!&ndash;                <methods>&ndash;&gt;-->
+        <!--&lt;!&ndash;                <include name="getAPITest"/>&ndash;&gt;-->
+        <!--&lt;!&ndash;                </methods>&ndash;&gt;-->
+        <!--&lt;!&ndash;            </class>&ndash;&gt;-->
+        <!--            <class name="com.qa.API_F02.tests.TestCase_001_Data"></class>>-->
+        <!--        </classes>-->
+        <!--    </test>-->
+        <!--</suite>-->

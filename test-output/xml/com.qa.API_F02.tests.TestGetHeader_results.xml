@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="API_AutoFramework"
+           tests="1"
+           failures="1"
+           errors="0"
+           skipped="0"
+           time="0.164">
+    <properties></properties>
+
+            <testcase
+                name="getAPITest"
+                time="0.164"
+                classname="com.qa.API_F02.tests.TestGetHeader">
+
+            <failure type="java.lang.IllegalArgumentException" message="Illegal character in path at index 0: {}">
+                <![CDATA[java.lang.IllegalArgumentException: Illegal character in path at index 0: {}
+                java.base/java.net.URI.create(URI.java:883)org.apache.http.client.methods.HttpGet.<init>(HttpGet.java:66)com.qa.API_F02.restclient.RestClient_getPost_01.getWH(RestClient_getPost_01.java:38)com.qa.API_F02.tests.TestGetHeader.getAPITest(TestGetHeader.java:50)java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)java.base/java.lang.reflect.Method.invoke(Method.java:566)org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)java.base/java.util.ArrayList.forEach(ArrayList.java:1540)org.testng.TestRunner.privateRun(TestRunner.java:764)org.testng.TestRunner.run(TestRunner.java:585)org.testng.SuiteRunner.runTest(SuiteRunner.java:384)org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)org.testng.SuiteRunner.run(SuiteRunner.java:286)org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)org.testng.TestNG.runSuitesLocally(TestNG.java:1140)org.testng.TestNG.runSuites(TestNG.java:1069)org.testng.TestNG.run(TestNG.java:1037)org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+                    Caused by: java.net.URISyntaxException: Illegal character in path at index 0: {}
+                    java.base/java.net.URI$Parser.fail(URI.java:2915)java.base/java.net.URI$Parser.checkChars(URI.java:3086)java.base/java.net.URI$Parser.parseHierarchical(URI.java:3168)java.base/java.net.URI$Parser.parse(URI.java:3127)java.base/java.net.URI.<init>(URI.java:600)java.base/java.net.URI.create(URI.java:881)org.apache.http.client.methods.HttpGet.<init>(HttpGet.java:66)com.qa.API_F02.restclient.RestClient_getPost_01.getWH(RestClient_getPost_01.java:38)com.qa.API_F02.tests.TestGetHeader.getAPITest(TestGetHeader.java:50)java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)java.base/java.lang.reflect.Method.invoke(Method.java:566)org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)java.base/java.util.ArrayList.forEach(ArrayList.java:1540)org.testng.TestRunner.privateRun(TestRunner.java:764)org.testng.TestRunner.run(TestRunner.java:585)org.testng.SuiteRunner.runTest(SuiteRunner.java:384)org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)org.testng.SuiteRunner.run(SuiteRunner.java:286)org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)org.testng.TestNG.runSuitesLocally(TestNG.java:1140)org.testng.TestNG.runSuites(TestNG.java:1069)org.testng.TestNG.run(TestNG.java:1037)org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+                ]]>
+            </failure>
+    </testcase>
+
+
+</testsuite>

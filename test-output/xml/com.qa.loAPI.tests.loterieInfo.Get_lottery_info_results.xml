@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="API_AutoFramework"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="0.387">
+    <properties></properties>
+
+
+
+            <testcase
+                name="get_lottery_info"
+                time="0.387"
+                classname="com.qa.loAPI.tests.loterieInfo.API_002_get_lottery_info">
+            </testcase>
+</testsuite>

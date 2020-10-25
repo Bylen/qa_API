@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="API_AutoFramework"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="3.019">
+    <properties></properties>
+
+
+
+            <testcase
+                name="bet_user_bet"
+                time="3.019"
+                classname="com.qa.loAPI.tests.userActionsClass.API_007_bet_user_bet">
+            </testcase>
+</testsuite>
