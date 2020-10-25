@@ -46,11 +46,13 @@ public class TestUtil {
         XSSFSheet sh = wb.getSheetAt(sheetId);
 //        HSSFWorkbook wb = new HSSFWorkbook(fis);
 //        HSSFSheet sh = wb.getSheetAt(sheetId);
+
+
         int numberrow = sh.getPhysicalNumberOfRows();
-        int numbercell = sh.getRow(0).getLastCellNum();
+        int numbercell = sh.getRow(1).getLastCellNum();
 
         Object[][] dttData = new Object[numberrow][numbercell];
-        for(int i=0;i<numberrow;i++){
+        for(int i=1;i<numberrow-1;i++){
             if(null==sh.getRow(i)||"".equals(sh.getRow(i))){
                 continue;
             }
