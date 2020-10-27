@@ -24,7 +24,7 @@ public class TestBase_CG {
         try{
             prop = new Properties();
             FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"/src/main/java/com/qa/API_F02/config/config.properties");
-            PropertyConfigurator.configure(System.getProperty("user.dir") + "/src/main/resources/log4j.properties");
+            PropertyConfigurator.configure(System.getProperty("user.dir") + "/src/test/resources/log4j.properties");
             prop.load(fis);
         }catch(FileNotFoundException e){
             e.printStackTrace();
