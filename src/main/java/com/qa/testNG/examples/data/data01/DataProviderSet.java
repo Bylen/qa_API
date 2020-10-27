@@ -24,7 +24,7 @@ public class DataProviderSet {
         HashMap<String,String> map1 = new HashMap<String, String>();
         map1.put("val1","10011");map1.put("val2","101");map1.put("val3","111");
         HashMap<String,String> map2 = new HashMap<String, String>();
-        map2.put("val2","200");map2.put("val2","202");map2.put("val3","222");
+        map2.put("val1","200");map2.put("val2","202");map2.put("val3","222");
         HashMap<String,String> map3 = new HashMap<String, String>();
         map3.put("val1","300");map3.put("val2","303");map3.put("val3","333");
 

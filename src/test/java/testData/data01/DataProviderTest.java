@@ -1,16 +1,18 @@
-package com.qa.testNG.examples.data.data01;
+package testData.data01;
 
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import java.util.HashMap;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
 
 /**
  * @author urPaPa
  * @date 2020/9/20 10:06
  */
-public class DataProviderTest extends DataProviderSet{
+public class DataProviderTest extends DataProviderSet {
     @Test(dataProvider = "dataIteratorProvider")
     public void testArrayDataProvider(String val1,String val2,String val3){
         System.out.printf("%s,%s,%s\n",val1,val2,val3);

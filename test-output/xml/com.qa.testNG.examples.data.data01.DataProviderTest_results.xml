@@ -1,32 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="API_AutoFramework"
-           tests="4"
+           tests="3"
            failures="0"
            errors="0"
            skipped="0"
-           time="0.003">
+           time="0.005">
     <properties></properties>
 
 
 
             <testcase
-                name="testArrayDataProvider"
-                time="0.003"
-                classname="com.qa.testNG.examples.data.data01.DataProviderTest">
+                name="testMapDataProvider"
+                time="0.004"
+                classname="com.qa.testNG.examples.testData.data01.DataProviderTest">
             </testcase>
             <testcase
-                name="testArrayDataProvider"
+                name="testMapDataProvider"
                 time="0.000"
-                classname="com.qa.testNG.examples.data.data01.DataProviderTest">
+                classname="com.qa.testNG.examples.testData.data01.DataProviderTest">
             </testcase>
             <testcase
-                name="testArrayDataProvider"
-                time="0.000"
-                classname="com.qa.testNG.examples.data.data01.DataProviderTest">
-            </testcase>
-            <testcase
-                name="testArrayDataProvider"
-                time="0.000"
-                classname="com.qa.testNG.examples.data.data01.DataProviderTest">
+                name="testMapDataProvider"
+                time="0.001"
+                classname="com.qa.testNG.examples.testData.data01.DataProviderTest">
             </testcase>
 </testsuite>

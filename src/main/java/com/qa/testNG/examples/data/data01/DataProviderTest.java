@@ -40,11 +40,11 @@ public class DataProviderTest extends DataProviderSet{
         return datas.iterator();
     }
 
-    @Test(dataProvider = "mapDataProvider2")
+    @Test(dataProvider = "mapDataProvider1")
     public void testMapDataProvider(HashMap<?,?> map){
         System.out.printf("%s,%s,%s\n",map.get("val1"),map.get("val2"),map.get("val3"));
     }
-
+/*
     @Test(dataProvider = "mapDataProvider2",dataProviderClass = DataProviderSet.class)
     public void mapDataProviderFromExcel(HashMap<String,String> map){
 
@@ -73,5 +73,5 @@ public class DataProviderTest extends DataProviderSet{
 //        datas.add(new Object[]{map3});
 //
 //        return datas.iterator();
-//    }
+//    }*/
 }

@@ -12,16 +12,16 @@
             <testcase
                 name="testMapDataProvider"
                 time="0.000"
-                classname="com.qa.testNG.examples.data.data01.DataProviderTest">
+                classname="com.qa.testNG.examples.testData.data01.DataProviderTest">
             </testcase>
             <testcase
                 name="testMapDataProvider"
                 time="0.003"
-                classname="com.qa.testNG.examples.data.data01.DataProviderTest">
+                classname="com.qa.testNG.examples.testData.data01.DataProviderTest">
             </testcase>
             <testcase
                 name="testMapDataProvider"
                 time="0.000"
-                classname="com.qa.testNG.examples.data.data01.DataProviderTest">
+                classname="com.qa.testNG.examples.testData.data01.DataProviderTest">
             </testcase>
 </testsuite>

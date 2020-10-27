@@ -1,4 +1,4 @@
-package com.qa.testNG.examples.data.data02;
+package testData.data02;
 
 import lombok.extern.slf4j.Slf4j;
 import org.apache.poi.xssf.usermodel.XSSFRow;

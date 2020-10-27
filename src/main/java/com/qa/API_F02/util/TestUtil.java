@@ -49,10 +49,10 @@ public class TestUtil {
 
 
         int numberrow = sh.getPhysicalNumberOfRows();
-        int numbercell = sh.getRow(1).getLastCellNum();
+        int numbercell = sh.getRow(0).getLastCellNum();
 
         Object[][] dttData = new Object[numberrow][numbercell];
-        for(int i=1;i<numberrow-1;i++){
+        for(int i=1;i<numberrow;i++){
             if(null==sh.getRow(i)||"".equals(sh.getRow(i))){
                 continue;
             }

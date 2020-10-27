@@ -1,11 +1,11 @@
-package com.qa.testNG.examples.data.data02;
-
-import java.io.File;
+package testData.data02;
 
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
+
+import java.io.File;
 
 /**
  * @author urPaPa
