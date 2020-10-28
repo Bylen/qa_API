@@ -5,6 +5,7 @@ import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.qa.loAPI.base.TestBase;
 import com.qa.loAPI.restclient.Https;
+import com.qa.testNG.examples.data.data01.DataProviderSet;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -30,8 +31,10 @@ public class API_006_get_new_twenty_record extends TestBase{
         url = host + "lottery_info/get_new_twenty_record";
     }
 
-    @Test
-    public void get_new_twenty_record() throws Exception {
+    @Test(dataProvider = "mapDataProvider001",dataProviderClass = DataProviderSet.class)
+    public void get_new_twenty_record(HashMap<?,?> map) throws Exception {
+        System.out.printf("%s,%s,%s\n",map.get("val1"),map.get("val2"),map.get("val3"));
+
         //header
         HashMap<String, String> postHeader = new HashMap<String, String>();
         postHeader.put("Content-Type", "application/x-www-form-urlencoded");
@@ -49,7 +52,7 @@ public class API_006_get_new_twenty_record extends TestBase{
         JSONObject responseJson = JSON.parseObject(closeableHttpResponse);//將String響應報文轉換成json格式
         int statusCode = responseJson.getIntValue("code");//直接取出code的value
         Assert.assertEquals(statusCode, 200);
-        Assert.assertTrue(closeableHttpResponse.contains("07,02,03,08,05,06,04,09,01,10"));//特例斷言
+        Assert.assertTrue(closeableHttpResponse.contains("07,06,02,03,09,04,08,01,10,05"));//特例斷言
 
         //断言响应json内容中name和job是不是期待结果
         System.out.println("responseJsonData is:" + responseJson);

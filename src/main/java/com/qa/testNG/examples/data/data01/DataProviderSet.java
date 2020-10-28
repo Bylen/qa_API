@@ -4,6 +4,7 @@ import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.testng.annotations.DataProvider;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
@@ -17,12 +18,12 @@ import java.util.List;
  */
 public class DataProviderSet {
 
-    @DataProvider(name = "mapDataProvider1")
+    @DataProvider(name = "mapDataProvider001")
     public static Iterator<Object[]> mapDataProvider(){
         List<Object[]> datas = new ArrayList<Object[]>();
 
         HashMap<String,String> map1 = new HashMap<String, String>();
-        map1.put("val1","10011");map1.put("val2","101");map1.put("val3","111");
+        map1.put("val1","aaa");map1.put("val2","bbb");map1.put("val3","ccc");
         HashMap<String,String> map2 = new HashMap<String, String>();
         map2.put("val1","200");map2.put("val2","202");map2.put("val3","222");
         HashMap<String,String> map3 = new HashMap<String, String>();
@@ -35,7 +36,7 @@ public class DataProviderSet {
         return datas.iterator();
     }
 
-    @DataProvider(name = "mapDataProvider2")
+    @DataProvider(name = "excelDataProvider001")
     public static Iterator<Object[]> mapListProvider(){
         List<Object[]> datas = new ArrayList<Object[]>();
 
@@ -43,10 +44,13 @@ public class DataProviderSet {
 
         DataFormatter dataFormat = new DataFormatter();
         try {
-            in = DataProvider.class.getClassLoader().getResourceAsStream("excelData/testData.xlsx");
-            XSSFWorkbook workbook = new XSSFWorkbook(in);
+//            in = DataProviderSet.class.getClassLoader().getResourceAsStream("resources01/testData.xlsx");
+            File directory = new File("");//参数为空
+            String courseFile = directory.getCanonicalPath() ;
+            System.out.println(courseFile);
+            XSSFWorkbook workbook = new XSSFWorkbook(courseFile);
 
-            Sheet sheet = workbook.getSheet("test");
+            Sheet sheet = workbook.getSheet("post");
 
             Row header = sheet.getRow(0);
 

@@ -23,9 +23,21 @@
             </class>
         </classes>
     </test>
+    <test name="testCase3">
+        <classes>
+            <class name="com.qa.loAPI.tests.loterieInfo.API_006_get_new_twenty_record">
+                <!--<methods>
+                    <include name="login"></include>
+                    <include name="getApi"></include>
+                    <include name="deleteApi"></include>
+                </methods>-->
+            </class>
+        </classes>
+    </test>
 
     <listeners>
         <listener class-name="com.qa.API_F02.report.ExtentTestNGReporterListener"></listener>
+        <listener class-name="com.qa.loAPI.report.ExtentTestNGReporterListener"></listener>
     </listeners>
 </suite>
 

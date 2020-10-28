@@ -73,7 +73,7 @@ public class ExcelUtil {
         SimpleDateFormat fmt = new SimpleDateFormat("yyyy-MM-dd");
         try {
             // 同时支持Excel 2003、2007
-            File excelFile = new File("D:/software_data/autoQA/API_AutoFramework/src/main/resources/excelData/testCase_001_Data.xlsx"); // 创建文件对象
+            File excelFile = new File("D:/software_data/autoQA/API_AutoFramework/src/main/resources/excelData/testCase_002_Data.xlsx"); // 创建文件对象
             FileInputStream in = new FileInputStream(excelFile); // 文件流
             checkExcelVaild(excelFile);
             Workbook workbook = getWorkbok(in,excelFile);

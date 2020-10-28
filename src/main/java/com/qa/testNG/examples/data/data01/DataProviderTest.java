@@ -15,6 +15,7 @@ public class DataProviderTest extends DataProviderSet{
     public void testArrayDataProvider(String val1,String val2,String val3){
         System.out.printf("%s,%s,%s\n",val1,val2,val3);
     }
+/*
 
     @DataProvider(name = "dataArrayProvider")
     public Object[][] dataArrayProvider(){
@@ -39,8 +40,9 @@ public class DataProviderTest extends DataProviderSet{
 
         return datas.iterator();
     }
+*/
 
-    @Test(dataProvider = "mapDataProvider1")
+    @Test(dataProvider = "excelDataProvider001",dataProviderClass = DataProviderSet.class)
     public void testMapDataProvider(HashMap<?,?> map){
         System.out.printf("%s,%s,%s\n",map.get("val1"),map.get("val2"),map.get("val3"));
     }

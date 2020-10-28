@@ -78,7 +78,7 @@ public class ExcelData {
 
     //测试方法
     public static void main(String[] args){
-        ExcelData sheet1 = new ExcelData("src/main/resources/excelData/testDataFormExcel.xlsx", "學生");
+        ExcelData sheet1 = new ExcelData("src/test/resources/excelData/testDataFormExcel.xlsx", "學生");
         String cell2 = sheet1.getExcelDateByIndex(7, 2);
         System.out.println(cell2);
         System.out.println("--------------------");

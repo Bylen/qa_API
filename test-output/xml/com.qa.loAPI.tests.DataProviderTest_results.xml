@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="API_AutoFramework"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="1"
+           time="0.000">
+    <properties></properties>
+
+
+            <testcase
+                name="testMapDataProvider"
+                time="0.0"
+                classname="com.qa.loAPI.tests.DataProviderTest">
+            </testcase>
+
+</testsuite>

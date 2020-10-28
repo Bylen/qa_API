@@ -20,7 +20,7 @@ import java.util.List;
  */
 public class DataProviderSet {
 
-    @DataProvider(name = "mapDataProvider1")
+    @DataProvider(name = "mapDataProvider001")
     public static Iterator<Object[]> mapDataProvider(){
         List<Object[]> datas = new ArrayList<Object[]>();
 
@@ -38,7 +38,7 @@ public class DataProviderSet {
         return datas.iterator();
     }
 
-    @DataProvider(name = "mapDataProvider2")
+    @DataProvider(name = "excelDataProvider001")
     public static Iterator<Object[]> mapListProvider(){
         List<Object[]> datas = new ArrayList<Object[]>();
 
@@ -46,10 +46,10 @@ public class DataProviderSet {
 
         DataFormatter dataFormat = new DataFormatter();
         try {
-            in = DataProvider.class.getClassLoader().getResourceAsStream("excelData/testData.xlsx");
+            in = DataProvider.class.getClassLoader().getResourceAsStream("src/test/resources/excelData/testCase_002_Data.xlsx");
             XSSFWorkbook workbook = new XSSFWorkbook(in);
 
-            Sheet sheet = workbook.getSheet("test");
+            Sheet sheet = workbook.getSheet("post");
 
             Row header = sheet.getRow(0);
 

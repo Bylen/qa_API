@@ -1,17 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="API_AutoFramework"
-           tests="1"
+<testsuite name="testCase3"
+           tests="3"
            failures="0"
            errors="0"
            skipped="0"
-           time="0.301">
+           time="0.359">
     <properties></properties>
 
 
 
             <testcase
                 name="get_new_twenty_record"
-                time="0.301"
+                time="0.106"
+                classname="com.qa.loAPI.tests.loterieInfo.API_006_get_new_twenty_record">
+            </testcase>
+            <testcase
+                name="get_new_twenty_record"
+                time="0.163"
+                classname="com.qa.loAPI.tests.loterieInfo.API_006_get_new_twenty_record">
+            </testcase>
+            <testcase
+                name="get_new_twenty_record"
+                time="0.090"
                 classname="com.qa.loAPI.tests.loterieInfo.API_006_get_new_twenty_record">
             </testcase>
 </testsuite>
