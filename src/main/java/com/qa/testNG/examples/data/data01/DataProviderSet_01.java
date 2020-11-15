@@ -1,6 +1,9 @@
 package com.qa.testNG.examples.data.data01;
 
-import org.apache.poi.ss.usermodel.*;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.DataFormatter;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.testng.annotations.DataProvider;
 
@@ -13,49 +16,20 @@ import java.util.List;
 
 /**
  * @author urPaPa
- * @date 2020/9/20 10:06
+ * @date 2020/11/13 15:58
  */
-public class DataProviderSet {
-
-    @DataProvider(name = "mapDataProvider001")
-    public static Iterator<Object[]> mapDataProvider(){
-        List<Object[]> datas = new ArrayList<Object[]>();
-
-        HashMap<String,String> map1 = new HashMap<String, String>();
-        map1.put("val1","aaa");map1.put("val2","bbb");map1.put("val3","ccc");
-        HashMap<String,String> map2 = new HashMap<String, String>();
-        map2.put("val1","200");map2.put("val2","202");map2.put("val3","222");
-        HashMap<String,String> map3 = new HashMap<String, String>();
-        map3.put("val1","300");map3.put("val2","303");map3.put("val3","333");
-
-        datas.add(new Object[]{map1});
-        datas.add(new Object[]{map2});
-        datas.add(new Object[]{map3});
-
-        return datas.iterator();
-    }
+public class DataProviderSet_01 {
 
     @DataProvider(name = "excelDataProvider001")
-    public Iterator<Object[]> mapListProvider(){
+    public static Iterator<Object[]> mapListProvider(){
         List<Object[]> datas = new ArrayList<Object[]>();
 
         InputStream in = null;
 
         DataFormatter dataFormat = new DataFormatter();
         try {
-            System.err.println(DataProviderSet.class.getResource("/"));
-            in = DataProviderSet.class.getResourceAsStream("/testDataFormExcel001.xlsx");
-//            URL url = DataProviderSet.class.getResource("");
-//            InputStream strm = url.openStream();
+            in = DataProviderSet_01.class.getClassLoader().getResourceAsStream("testDataFormExcel001.xlsx");
             XSSFWorkbook workbook = new XSSFWorkbook(in);
-//            Workbook workbook = null;
-//            try {
-//                workbook = new HSSFWorkbook(in);
-//            } catch (Exception ex) {
-//                // 解决read error异常
-////                is = new FileInputStream(file);
-//                workbook = new XSSFWorkbook(in);
-//            }
 
             Sheet sheet = workbook.getSheet("學生");
 
@@ -78,13 +52,14 @@ public class DataProviderSet {
                     rowMap.put(dataFormat.formatCellValue(header.getCell(cell.getColumnIndex()))
                             ,dataFormat.formatCellValue(cell));
                 }
+                datas.add(new Object[]{rowMap});
             }
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
             try {
                 if(in !=null)
-                in.close();
+                    in.close();
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -92,5 +67,4 @@ public class DataProviderSet {
 
         return datas.iterator();
     }
-
 }

@@ -1,27 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="API_AutoFramework"
-           tests="3"
-           failures="0"
+           tests="1"
+           failures="1"
            errors="0"
            skipped="0"
-           time="0.004">
+           time="0.014">
     <properties></properties>
 
+            <testcase
+                name="testArrayDataProvider"
+                time="0.014"
+                classname="com.qa.testNG.examples.data.data01.DataProviderTest">
+
+            <failure type="org.testng.internal.reflect.MethodMatcherException" message="
+[public void com.qa.testNG.examples.data.data01.DataProviderTest.testArrayDataProvider(java.lang.String,java.lang.String,java.lang.String)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: testArrayDataProvider([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}])
+Arguments: [(java.util.HashMap) {val3=ccc, val2=bbb, val1=aaa}]">
+                <![CDATA[org.testng.internal.reflect.MethodMatcherException: 
+[public void com.qa.testNG.examples.data.data01.DataProviderTest.testArrayDataProvider(java.lang.String,java.lang.String,java.lang.String)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: testArrayDataProvider([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}])
+Arguments: [(java.util.HashMap) {val3=ccc, val2=bbb, val1=aaa}]
+                org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:43)org.testng.internal.Parameters.injectParameters(Parameters.java:905)org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:34)org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)java.util.ArrayList.forEach(ArrayList.java:1257)org.testng.TestRunner.privateRun(TestRunner.java:764)org.testng.TestRunner.run(TestRunner.java:585)org.testng.SuiteRunner.runTest(SuiteRunner.java:384)org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)org.testng.SuiteRunner.run(SuiteRunner.java:286)org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)org.testng.TestNG.runSuitesLocally(TestNG.java:1140)org.testng.TestNG.runSuites(TestNG.java:1069)org.testng.TestNG.run(TestNG.java:1037)org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+]]>
+            </failure>
+    </testcase>
 
 
-            <testcase
-                name="testMapDataProvider"
-                time="0.003"
-                classname="com.qa.testNG.examples.data.data01.DataProviderTest">
-            </testcase>
-            <testcase
-                name="testMapDataProvider"
-                time="0.001"
-                classname="com.qa.testNG.examples.data.data01.DataProviderTest">
-            </testcase>
-            <testcase
-                name="testMapDataProvider"
-                time="0.000"
-                classname="com.qa.testNG.examples.data.data01.DataProviderTest">
-            </testcase>
 </testsuite>

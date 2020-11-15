@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="API_AutoFramework"
+           tests="6"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="0.008">
+    <properties></properties>
+
+
+
+            <testcase
+                name="mapDataProviderFromExcel"
+                time="0.000"
+                classname="com.qa.testNG.examples.data.data01.DataProviderTest_01">
+            </testcase>
+            <testcase
+                name="mapDataProviderFromExcel"
+                time="0.001"
+                classname="com.qa.testNG.examples.data.data01.DataProviderTest_01">
+            </testcase>
+            <testcase
+                name="mapDataProviderFromExcel"
+                time="0.000"
+                classname="com.qa.testNG.examples.data.data01.DataProviderTest_01">
+            </testcase>
+            <testcase
+                name="mapDataProviderFromExcel"
+                time="0.000"
+                classname="com.qa.testNG.examples.data.data01.DataProviderTest_01">
+            </testcase>
+            <testcase
+                name="mapDataProviderFromExcel"
+                time="0.000"
+                classname="com.qa.testNG.examples.data.data01.DataProviderTest_01">
+            </testcase>
+            <testcase
+                name="mapDataProviderFromExcel"
+                time="0.007"
+                classname="com.qa.testNG.examples.data.data01.DataProviderTest_01">
+            </testcase>
+</testsuite>

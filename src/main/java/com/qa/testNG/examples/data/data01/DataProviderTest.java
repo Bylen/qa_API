@@ -42,38 +42,20 @@ public class DataProviderTest extends DataProviderSet{
     }
 */
 
-    @Test(dataProvider = "excelDataProvider001",dataProviderClass = DataProviderSet.class)
+    @Test(dataProvider = "excelDataProvider001",dataProviderClass = DataProviderSet_01.class)
     public void testMapDataProvider(HashMap<?,?> map){
         System.out.printf("%s,%s,%s\n",map.get("val1"),map.get("val2"),map.get("val3"));
     }
-/*
-    @Test(dataProvider = "mapDataProvider2",dataProviderClass = DataProviderSet.class)
+    @Test(dataProvider = "excelDataProvider001",dataProviderClass = DataProviderSet_01.class)
     public void mapDataProviderFromExcel(HashMap<String,String> map){
 
-//        Set<Entry<String,String>> sets = map.entrySet();
-//        Iterator<Entry<String,String>> iterEntry = sets.iterator();
-//
-//        while (iterEntry.hasNext()){
-//            Entry<String,String> entry = iterEntry.next();
-//            System.out.println(entry.getKey() + "->" + entry.getValue());
-//        }
+          Set<Map.Entry<String,String>> sets = map.entrySet();
+          Iterator<Map.Entry<String,String>> iterEntry = sets.iterator();
+
+          while (iterEntry.hasNext()){
+              Map.Entry<String,String> entry = iterEntry.next();
+              System.out.println(entry.getKey() + "->" + entry.getValue());
+          }
     }
 
-//    @DataProvider(name = "mapDataProvider")
-//    public Iterator<Object[]> mapDataProvider(){
-//        List<Object[]> datas = new ArrayList<Object[]>();
-//
-//        HashMap<String,String> map1 = new HashMap<String, String>();
-//        map1.put("val1","1001");map1.put("val2","101");map1.put("val3","111");
-//        HashMap<String,String> map2 = new HashMap<String, String>();
-//        map2.put("val2","200");map2.put("val2","202");map2.put("val3","222");
-//        HashMap<String,String> map3 = new HashMap<String, String>();
-//        map3.put("val1","300");map3.put("val2","303");map3.put("val3","333");
-//
-//        datas.add(new Object[]{map1});
-//        datas.add(new Object[]{map2});
-//        datas.add(new Object[]{map3});
-//
-//        return datas.iterator();
-//    }*/
 }
